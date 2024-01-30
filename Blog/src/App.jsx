@@ -1,13 +1,25 @@
 import { useState } from 'react'
 import './App.css'
+import {
+  HashRouter as Router,
+  Route,
+  Routes,
+} from "react-router-dom";
+
+//Pages
+import Home from './Pages/Home'
+import Notes from './Pages/Mynotes/Notes'
 
 function App() {
 
   return (
     <>
-      <div>
-        <h2 className='text-3xl text-center text-red-700'>Hello</h2>
-      </div>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/notes" element={<Notes />} />
+        </Routes>
+      </Router>
     </>
   )
 }
