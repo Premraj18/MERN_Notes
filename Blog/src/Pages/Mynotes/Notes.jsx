@@ -1,10 +1,24 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
-import MyNotes from '../../../../MOCK_DATA.json'
 import Accordian from './Accordian'
 import MainScreen from '../MainScreen'
+import axios from 'axios'
 
 const Notes = () => {
+
+    const [notes, setnotes] = useState([])
+
+    const fetchNotes = async () => {
+        const {data} = await axios.get('http://localhost:4000/api/notes');
+        
+        setnotes(data)
+    };
+
+    console.log(notes)
+
+    useEffect(() => {
+        fetchNotes();
+    },[])
    
     return (
         <MainScreen title='Welcome Back Prem Raj'>
@@ -15,7 +29,7 @@ const Notes = () => {
                     </button>
                 </Link>
                 {
-                    MyNotes.map((d) => {
+                    notes.map((d) => {
                         const { id } = d;
                         return <Accordian key={id} {...d} />
                     })

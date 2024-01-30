@@ -1,42 +1,26 @@
 [
     {
-        "id": 1,
-        "first_name": "Janeva",
-        "last_name": "Sikorsky",
-        "email": "jsikorsky0@slideshare.net",
-        "gender": "Female",
-        "job_title": "Senior Financial Analyst"
+      "id": "1",
+      "title": "Day 1 of college",
+      "content":"I made a few new friends and introduced myself to a lot of new teachers.",
+      "category": "College"
     },
     {
-        "id": 2,
-        "first_name": "Vidovik",
-        "last_name": "Guild",
-        "email": "vguild1@usatoday.com",
-        "gender": "Genderfluid",
-        "job_title": "Civil Engineer"
+      "id": "2",
+      "title": "Learned some Node JS",
+      "content": "Learned how to create a server in node JS and my first API",
+      "category": "Learning"
     },
     {
-        "id": 3,
-        "first_name": "Shelli",
-        "last_name": "Wackley",
-        "email": "swackley2@lycos.com",
-        "gender": "Female",
-        "job_title": "Budget/Accounting Analyst I"
+      "id": "3",
+      "title": "Watched some Anime",
+      "content": "Finished 2 seasons of Attack on Titan and My Hero academia.",
+      "category": "Entertainment"
     },
     {
-        "id": 4,
-        "first_name": "Kimbell",
-        "last_name": "Dewdeny",
-        "email": "kdewdeny3@hud.gov",
-        "gender": "Male",
-        "job_title": "Safety Technician III"
-    },
-    {
-        "id": 5,
-        "first_name": "Ardra",
-        "last_name": "Selley",
-        "email": "aselley4@elegantthemes.com",
-        "gender": "Female",
-        "job_title": "Research Associate"
+      "id": "4",
+      "title": "Started React JS",
+      "content":"Made my first App in React JS, feels awesome to learn something new. I aim to be a full stack dev someday",
+      "category": "Learning"
     }
-]
+  ]

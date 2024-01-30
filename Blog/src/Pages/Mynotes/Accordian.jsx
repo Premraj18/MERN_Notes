@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 
-const Accordian = ({id,first_name,last_name,job_title }) => {
+const Accordian = ({id,title,category,content }) => {
 
     const [toggle, settoggle] = useState(false)
 
@@ -16,7 +16,7 @@ const Accordian = ({id,first_name,last_name,job_title }) => {
         <div className="rounded  w-full shadow-md bg-white flex flex-col  my-3">
             <div onClick={(e) => settoggle(!toggle)} className='flex border-b-2 bg-slate-100 justify-between h-16 items-center'>
                 <div className="px-6 ">
-                    <div className=" text-xl mb-2">{first_name}</div>
+                    <div className=" text-xl mb-2">{title}</div>
                 </div>
 
                 <div className="px-10 pt-4 pb-2">
@@ -32,9 +32,9 @@ const Accordian = ({id,first_name,last_name,job_title }) => {
             {toggle &&
                 <div className='pt-5 px-4 '>
                     <button className='bg-lime-600 md:w-40 w-40 text-white hover:bg-lime-700 p-1 mb-3 rounded'>
-                        Category - {last_name}
+                        Category - {category}
                     </button>
-                    <p>{job_title}</p>
+                    <p>{content}</p>
                     <p className='text-slate-400 py-5'>-Created On Date</p>
                 </div>
 
